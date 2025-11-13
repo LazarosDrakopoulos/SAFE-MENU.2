@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+header h1 {
+  text-align: center;
+  color: #ff7b00;
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+main h2 {
+  color: #ff7b00;
+  margin-bottom: 15px;
+}
+
+main p {
+  margin-bottom: 15px;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Back button */
+.back-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background-color:  #ff7b00;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+/* Full-page flex container to center content */
+.centered-container {
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering */
+  height: 100vh;           /* full viewport height */
+  background-color: #fff8f0; /* optional SAFE MENU background */
+  padding: 20px;
+}
+
+/* Big green hospital button */
+.hospital-btn {
+  display: inline-block;
+  background-color: #28a745; /* green */
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 25px 50px;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.hospital-btn:hover {
+  background-color: #218838; /* darker green */
+  transform: translateY(-3px);
+}

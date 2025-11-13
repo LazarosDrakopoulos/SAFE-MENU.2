@@ -1,0 +1,123 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #ff7b00;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+header h1 {
+  font-family: 'Georgia', serif;
+  font-size: 1.8rem;
+}
+
+/* Intro Section */
+.contact-intro {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+.contact-intro h2 {
+  color: #ff7b00;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-intro p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Form Section */
+.contact-form {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+form {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 500px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #ff7b00;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #e56f00;
+}
+
+/* Contact Info */
+.contact-info {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.contact-info h3 {
+  color: #ff7b00;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #ff7b00;
+  color: white;
+  padding: 15px;
+  font-size: 0.9rem;
+}

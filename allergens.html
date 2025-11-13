@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAFE MENU - Select Allergens</title>
+  <link rel="stylesheet" href="safe.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="allergens.html" class="active">Allergens</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="allergens-section">
+      <h2>Select your allergens</h2>
+      <p>Hover over the icons to see the allergen name. Click to select. You can also add your own allergen.</p>
+
+      <div class="allergen-grid">
+        <!-- Predefined allergens -->
+        <div class="allergen" data-name="Milk" onclick="toggleAllergen(this)">
+          <img src="https://png.pngtree.com/png-clipart/20240619/original/pngtree-a-bottle-in-fresh-splash-milk-png-image_15366664.png" alt="Milk" title="Milk">
+        </div>
+        <div class="allergen" data-name="Eggs" onclick="toggleAllergen(this)">
+          <img src="https://png.pngtree.com/png-vector/20250606/ourmid/pngtree-chicken-eggs-isolated-on-transparent-background-png-image_16464753.png" alt="Eggs" title="Eggs">
+        </div>
+        <div class="allergen" data-name="Peanuts" onclick="toggleAllergen(this)">
+          <img src="https://png.pngtree.com/png-vector/20250611/ourmid/pngtree-raw-peanuts-cluster-with-green-leaves-png-image_16517304.png" alt="Peanuts" title="Peanuts">
+        </div>
+        <div class="allergen" data-name="Tree Nuts" onclick="toggleAllergen(this)">
+          <img src="https://p7.hiclipart.com/preview/1021/391/637/nut.jpg" alt="Tree Nuts" title="Tree Nuts">
+        </div>
+        <div class="allergen" data-name="Soybeans" onclick="toggleAllergen(this)">
+          <img src="https://pngimg.com/d/soybean_PNG2.png" alt="Soybeans" title="Soybeans">
+        </div>
+        <div class="allergen" data-name="Gluten" onclick="toggleAllergen(this)">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdLiR8OwMyarNJ3KbOC-puSfgnVcy26GWb8w&s" alt="Gluten" title="Gluten">
+        </div>
+        <div class="allergen" data-name="Fish" onclick="toggleAllergen(this)">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/048/718/642/small/fish-on-transparent-background-free-png.png" alt="Fish" title="Fish">
+        </div>
+        <div class="allergen" data-name="Crustaceans" onclick="toggleAllergen(this)">
+          <img src="https://png.pngtree.com/png-vector/20240518/ourmid/pngtree-crab-animal-seafood-crustacean-png-image_12477644.png" alt="Crustaceans" title="Crustaceans">
+        </div>
+        <div class="allergen" data-name="Molluscs" onclick="toggleAllergen(this)">
+          <img src="https://e7.pngegg.com/pngimages/243/831/png-clipart-seashell-mussel-mollusc-shell-gastropod-shell-molluscs-beach-marine-mammal-thumbnail.png" alt="Molluscs" title="Molluscs">
+        </div>
+        <div class="allergen" data-name="Celery" onclick="toggleAllergen(this)">
+          <img src="https://www.nicepng.com/png/detail/115-1158000_celery-png-image-celery-leaves-in-tamil.png" alt="Celery" title="Celery">
+        </div>
+        <div class="allergen" data-name="Mustard" onclick="toggleAllergen(this)">
+          <img src="https://img.freepik.com/free-psd/pile-yellow-lentils-healthy-food-nutrition-grains-legumes-dietary_191095-79520.jpg?semt=ais_hybrid&w=740&q=80" alt="Mustard" title="Mustard">
+        </div>
+        <div class="allergen" data-name="Sesame Seeds" onclick="toggleAllergen(this)">
+          <img src="https://as2.ftcdn.net/jpg/05/53/14/93/1000_F_553149300_6FvfGGsrFblfpW201pd7Q1nZkhwRpzep.jpg" alt="Sesame Seeds" title="Sesame Seeds">
+        </div>
+        <div class="allergen" data-name="Lupin" onclick="toggleAllergen(this)">
+          <img src="https://funflowerfacts.wordpress.com/wp-content/uploads/2013/07/lupine-lupin-lupinus.jpg" alt="Lupin" title="Lupin">
+        </div>
+        <div class="allergen" data-name="Sulphites" onclick="toggleAllergen(this)">
+          <img src="https://allergyfacts.org.au/wp-content/uploads/dried-fruit-sulphites.png" alt="Sulphites" title="Sulphites">
+        </div>
+<!-- Custom allergen modal -->
+<div id="customAllergenModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeCustomModal()">&times;</span>
+    <h3>Add your allergen</h3>
+    <input type="text" id="customInput" placeholder="Enter allergen">
+    <button onclick="submitCustomAllergen()">Add</button>
+  </div>
+</div>
+
+        <!-- Custom allergen -->
+        <div class="allergen custom" onclick="addCustomAllergen()">
+          <span>+</span>
+        </div>
+      </div>
+
+      <!-- Selected allergens display -->
+      <div class="selected-allergens" id="selectedAllergens"></div>
+
+      <!-- Submit button -->
+      <button class="submit-btn" onclick="submitAllergens()">Submit</button>
+    </section>
+  </main>
+
+  <script src="safe.js"></script>
+</body>
+</html>
