@@ -24,7 +24,7 @@
       <p>Hover over the icons to see the allergen name. Click to select. You can also add your own allergen.</p>
 
       <div class="allergen-grid">
-        <!-- Predefined allergens -->
+   
         <div class="allergen" data-name="Milk" onclick="toggleAllergen(this)">
           <img src="https://png.pngtree.com/png-clipart/20240619/original/pngtree-a-bottle-in-fresh-splash-milk-png-image_15366664.png" alt="Milk" title="Milk">
         </div>
@@ -67,7 +67,7 @@
         <div class="allergen" data-name="Sulphites" onclick="toggleAllergen(this)">
           <img src="https://allergyfacts.org.au/wp-content/uploads/dried-fruit-sulphites.png" alt="Sulphites" title="Sulphites">
         </div>
-<!-- Custom allergen modal -->
+
 <div id="customAllergenModal" class="modal">
   <div class="modal-content">
     <span class="close-btn" onclick="closeCustomModal()">&times;</span>
@@ -77,16 +77,16 @@
   </div>
 </div>
 
-        <!-- Custom allergen -->
+       
         <div class="allergen custom" onclick="addCustomAllergen()">
           <span>+</span>
         </div>
       </div>
 
-      <!-- Selected allergens display -->
+      
       <div class="selected-allergens" id="selectedAllergens"></div>
 
-      <!-- Submit button -->
+     
       <button class="submit-btn" onclick="submitAllergens()">Submit</button>
     </section>
   </main>

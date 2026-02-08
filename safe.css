@@ -67,7 +67,7 @@ p {
   line-height: 1.5;
 }
 
-/* ---------- Emergency button ---------- */
+
 .emergency-btn {
   position: fixed;
   bottom: 20px;
@@ -87,7 +87,7 @@ p {
   background-color: #a00000;
 }
 
-/* ---------- Responsive ---------- */
+
 @media (max-width: 768px) {
   .navbar li {
     display: block;
@@ -102,7 +102,7 @@ p {
     width: 90%;
   }
 }
-/* ---------- Allergens Section ---------- */
+
 .allergens-section {
   text-align: center;
   padding: 40px 20px;
@@ -159,7 +159,7 @@ p {
   justify-content: center;
 }
 
-/* Selected allergens badges */
+
 .selected-allergens {
   margin: 30px auto;
   display: flex;
@@ -176,7 +176,7 @@ p {
   font-size: 0.9em;
 }
 
-/* Submit button */
+
 .submit-btn {
   background-color: #ff7b00;
   color: white;
@@ -193,7 +193,7 @@ p {
   background-color: #e06600;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .allergen {
     width: 60px;
@@ -204,9 +204,9 @@ p {
     width: 90%;
   }
 }
-/* ---------- Modal Styles ---------- */
+
 .modal {
-  display: none; /* hidden by default */
+  display: none; 
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -261,7 +261,7 @@ p {
   cursor: pointer;
   color: #333;
 }
-/* ---------- Menu Section ---------- */
+
 .menu-section {
   text-align: center;
   padding: 40px 20px;
@@ -308,18 +308,18 @@ p {
 }
 
 .menu-card li {
-  font-weight: normal;  /* normal for regular ingredients */
-  color: black;         /* all text black */
+  font-weight: normal;  
+  color: black;         
   margin-bottom: 3px;
 }
 
 .menu-card li.allergen {
-  font-weight: normal;  /* do not make bold, do not color differently */
+  font-weight: normal;  
   color: black;
 }
 
 
 .menu-card li.allergen {
-  font-weight: bold;    /* allergens just bold */
-  color: black;         /* same color as other ingredients */
+  font-weight: bold;    
+  color: black;         
 }
