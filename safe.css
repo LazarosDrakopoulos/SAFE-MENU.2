@@ -48,6 +48,8 @@ body {
   height: auto;
   cursor: pointer;
   transition: transform 0.3s;
+  border-radius: 90%;
+   mix-blend-mode: darken;
 }
 
 .logo:hover {
