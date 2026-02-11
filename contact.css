@@ -6,7 +6,7 @@ body {
   padding: 0;
 }
 
-/* Header */
+
 header {
   background-color: #ff7b00;
   padding: 15px 25px;
@@ -34,7 +34,7 @@ header h1 {
   font-size: 1.8rem;
 }
 
-/* Intro Section */
+
 .contact-intro {
   text-align: center;
   padding: 40px 20px 20px;
@@ -52,7 +52,7 @@ header h1 {
   color: #555;
 }
 
-/* Form Section */
+
 .contact-form {
   display: flex;
   justify-content: center;
@@ -101,7 +101,7 @@ button:hover {
   background-color: #e56f00;
 }
 
-/* Contact Info */
+
 .contact-info {
   text-align: center;
   padding: 30px 20px;
@@ -113,7 +113,7 @@ button:hover {
   margin-bottom: 10px;
 }
 
-/* Footer */
+
 footer {
   text-align: center;
   background-color: #ff7b00;
@@ -148,5 +148,5 @@ footer {
 
 .navbar a:hover,
 .navbar a.active {
-  color: #ff7b00; /* orange accent */
+  color: #ff7b00; 
 }

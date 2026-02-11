@@ -32,7 +32,7 @@ li {
   margin-bottom: 10px;
 }
 
-/* Back button */
+
 .back-btn {
   position: fixed;
   bottom: 20px;
@@ -45,20 +45,20 @@ li {
   font-weight: bold;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
-/* Full-page flex container to center content */
+
 .centered-container {
   display: flex;
-  justify-content: center; /* horizontal centering */
-  align-items: center;     /* vertical centering */
-  height: 100vh;           /* full viewport height */
-  background-color: #fff8f0; /* optional SAFE MENU background */
+  justify-content: center; 
+  align-items: center;     
+  height: 100vh;           
+  background-color: #fff8f0; 
   padding: 20px;
 }
 
-/* Big green hospital button */
+
 .hospital-btn {
   display: inline-block;
-  background-color: #28a745; /* green */
+  background-color: #28a745; 
   color: white;
   font-weight: bold;
   font-size: 1.8rem;
@@ -70,6 +70,6 @@ li {
 }
 
 .hospital-btn:hover {
-  background-color: #218838; /* darker green */
+  background-color: #218838; 
   transform: translateY(-3px);
 }

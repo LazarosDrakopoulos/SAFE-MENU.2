@@ -1,13 +1,13 @@
-// Retrieve user-selected allergens (from allergens.html)
+
 const userAllergens = JSON.parse(localStorage.getItem('userAllergens')) || [];
 
-// Define known allergens
+
 const knownAllergens = [
   "milk","eggs","peanuts","tree nuts","soybeans","gluten","fish",
   "crustaceans","molluscs","celery","mustard","sesame seeds","lupin","sulphites"
 ];
 
-// Full 25-dish hotel menu
+
 const menu = [
   { name: "Margherita Pizza", ingredients: ["Flour", "Tomato", "Mozzarella", "Basil", "Milk"] },
   { name: "Caesar Salad", ingredients: ["Lettuce", "Croutons", "Parmesan", "Eggs", "Anchovies"] },
@@ -36,22 +36,22 @@ const menu = [
   { name: "Vegetable Soup", ingredients: ["Carrots", "Potatoes", "Celery", "Onions"] },
 ];
 
-// Select the menu container
-const menuGrid = document.getElementById('menuGrid');
-menuGrid.innerHTML = ""; // clear any existing content
 
-// Filter and display dishes
+const menuGrid = document.getElementById('menuGrid');
+menuGrid.innerHTML = ""; 
+
+
 menu.forEach(dish => {
   let hasAllergen = false;
 
-  // If user has allergens, filter dishes
+ 
   if (userAllergens.length > 0) {
     hasAllergen = dish.ingredients.some(ing =>
       userAllergens.some(a => a.toLowerCase() === ing.toLowerCase())
     );
   }
 
-  // Show all if user has no allergens
+ 
   if (!hasAllergen) {
     const card = document.createElement('div');
     card.className = 'menu-card';
@@ -64,7 +64,7 @@ menu.forEach(dish => {
     dish.ingredients.forEach(ing => {
       const li = document.createElement('li');
 
-      // Bold allergens, normal text otherwise
+      
       if (knownAllergens.includes(ing.toLowerCase())) {
         li.innerHTML = `<strong>${ing}</strong>`;
       } else {
