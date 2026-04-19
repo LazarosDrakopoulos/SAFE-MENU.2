@@ -85,7 +85,7 @@ window.addEventListener("load", () => {
    
     setTimeout(() => {
       splash.classList.add("fade-out");
-    }, 2000);
+    }, 3000);
 
     setTimeout(() => {
       splash.style.display = "none";
