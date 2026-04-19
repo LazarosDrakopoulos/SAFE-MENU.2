@@ -70,3 +70,24 @@ function submitAllergens() {
   localStorage.setItem('userAllergens', JSON.stringify(selectedAllergens));
   window.location.href = "menu.html";
 }
+window.addEventListener("load", () => {
+    const splash = document.getElementById("splash");
+
+
+    if (sessionStorage.getItem("splashShown")) {
+      splash.style.display = "none";
+      return;
+    }
+
+  
+    sessionStorage.setItem("splashShown", "true");
+
+   
+    setTimeout(() => {
+      splash.classList.add("fade-out");
+    }, 2000);
+
+    setTimeout(() => {
+      splash.style.display = "none";
+    }, 2800);
+  });
