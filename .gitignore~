@@ -1,1 +1,15 @@
-safe-menu/node_modules
+# Old project
+node_modules/
+
+# React/Vite project
+safe-menu/node_modules/
+safe-menu/dist/
+safe-menu/.env
+safe-menu/.env.local
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
