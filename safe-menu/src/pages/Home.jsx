@@ -5,6 +5,7 @@ function Home() {
   const splashRef = useRef(null)
 
   useEffect(() => {
+
     const splash = splashRef.current
 
     if (sessionStorage.getItem('splashShown')) {
