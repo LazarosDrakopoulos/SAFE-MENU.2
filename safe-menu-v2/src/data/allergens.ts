@@ -1,0 +1,115 @@
+/* ─────────────────────────────────────────────
+   Allergen Definitions
+   Each allergen has a list of ingredient keywords.
+   The allergenDetector uses these to auto-tag
+   products fetched from TheMealDB.
+───────────────────────────────────────────── */
+
+import type { Allergen } from '../types/allergen'
+
+export const ALLERGENS: Allergen[] = [
+  {
+    id: 'gluten',
+    label: 'Gluten',
+    description: 'Found in wheat, barley, rye and products made from them.',
+    emoji: '🌾',
+    keywords: [
+      'flour', 'wheat', 'bread', 'breadcrumbs', 'pasta', 'noodles',
+      'spaghetti', 'penne', 'linguine', 'fettuccine', 'lasagne', 'lasagna',
+      'tortilla', 'pita', 'bun', 'buns', 'roll', 'rolls', 'croutons',
+      'barley', 'rye', 'malt', 'semolina', 'couscous', 'bulgur',
+      'plain flour', 'self-raising flour', 'strong flour', 'wholemeal flour',
+      'panko', 'cornstarch', 'cornflour', 'baking powder', 'yeast',
+      'soy sauce', 'teriyaki', 'worcestershire sauce', 'beer',
+    ],
+  },
+  {
+    id: 'milk',
+    label: 'Milk',
+    description: 'All dairy products including cheese, butter and cream.',
+    emoji: '🥛',
+    keywords: [
+      'milk', 'whole milk', 'skimmed milk', 'semi-skimmed milk',
+      'butter', 'cream', 'double cream', 'single cream', 'soured cream',
+      'sour cream', 'heavy cream', 'whipping cream', 'clotted cream',
+      'cheese', 'cheddar', 'mozzarella', 'parmesan', 'feta', 'brie',
+      'camembert', 'gouda', 'gruyere', 'ricotta', 'mascarpone',
+      'cream cheese', 'cottage cheese', 'gorgonzola', 'provolone',
+      'yogurt', 'yoghurt', 'greek yogurt', 'fromage frais',
+      'lactose', 'whey', 'casein', 'ghee', 'kefir',
+      'bechamel', 'béchamel', 'white sauce',
+    ],
+  },
+  {
+    id: 'eggs',
+    label: 'Eggs',
+    description: 'Eggs and egg-based products.',
+    emoji: '🥚',
+    keywords: [
+      'egg', 'eggs', 'egg yolk', 'egg white', 'egg yolks', 'egg whites',
+      'whole egg', 'free-range egg', 'free range egg',
+      'mayonnaise', 'mayo', 'hollandaise', 'meringue', 'custard',
+      'egg noodles', 'pasta', 'quiche',
+    ],
+  },
+  {
+    id: 'soy',
+    label: 'Soy',
+    description: 'Soybeans and soy-derived products.',
+    emoji: '🫘',
+    keywords: [
+      'soy', 'soya', 'soybean', 'soybeans', 'soya bean', 'soya beans',
+      'soy sauce', 'soya sauce', 'tamari', 'miso', 'tofu',
+      'edamame', 'tempeh', 'natto', 'soy milk', 'soya milk',
+      'soy protein', 'textured vegetable protein', 'tvp',
+    ],
+  },
+  {
+    id: 'nuts',
+    label: 'Tree Nuts',
+    description: 'All tree nuts including almonds, cashews, walnuts and more.',
+    emoji: '🥜',
+    keywords: [
+      'almond', 'almonds', 'walnut', 'walnuts', 'cashew', 'cashews',
+      'pistachio', 'pistachios', 'pecan', 'pecans', 'hazelnut', 'hazelnuts',
+      'macadamia', 'brazil nut', 'brazil nuts', 'pine nut', 'pine nuts',
+      'peanut', 'peanuts', 'peanut butter', 'nut', 'nuts',
+      'praline', 'marzipan', 'almond flour', 'almond milk',
+      'chestnut', 'chestnuts',
+    ],
+  },
+  {
+    id: 'sesame',
+    label: 'Sesame',
+    description: 'Sesame seeds and sesame oil.',
+    emoji: '🌱',
+    keywords: [
+      'sesame', 'sesame seeds', 'sesame oil', 'sesame seed',
+      'tahini', 'hummus', 'halva',
+    ],
+  },
+  {
+    id: 'fish',
+    label: 'Fish',
+    description: 'All fish species and fish-derived products.',
+    emoji: '🐟',
+    keywords: [
+      'fish', 'salmon', 'tuna', 'cod', 'haddock', 'sea bass', 'seabass',
+      'sea bream', 'trout', 'mackerel', 'sardine', 'sardines', 'anchovies',
+      'anchovy', 'herring', 'tilapia', 'swordfish', 'halibut', 'plaice',
+      'fish sauce', 'worcestershire sauce', 'caesar dressing',
+    ],
+  },
+  {
+    id: 'shellfish',
+    label: 'Shellfish',
+    description: 'Crustaceans and molluscs including shrimp, crab and mussels.',
+    emoji: '🦐',
+    keywords: [
+      'shrimp', 'prawns', 'prawn', 'crab', 'lobster', 'crayfish',
+      'mussel', 'mussels', 'clam', 'clams', 'oyster', 'oysters',
+      'scallop', 'scallops', 'squid', 'octopus', 'calamari',
+      'shellfish', 'seafood',
+    ],
+  },
+]
