@@ -14,25 +14,24 @@ export default function AuthPage() {
 
   return (
     <div className={styles.page}>
-      {/* Background decoration */}
+     
       <div className={styles.bgBlob1} />
       <div className={styles.bgBlob2} />
 
-      {/* Logo */}
+     
       <div className={styles.logoSection}>
         <img src="/smlogo.png" alt="Safe Menu" className={styles.logo} />
         <h1 className={styles.appName}>Safe Menu</h1>
         <p className={styles.tagline}>Discover food that's safe for you</p>
       </div>
 
-      {/* Auth card */}
+      
       <div className={styles.card}>
 
-        {/* Login section — disabled, phase 2 */}
         <div className={styles.comingSoonWrap}>
           <div className={styles.comingSoonBanner}>
             <span>🔒</span>
-            <span>Login & Register — Coming in Phase 2</span>
+            <span>Login & Register "in progress"</span>
           </div>
 
           <Button
@@ -40,7 +39,7 @@ export default function AuthPage() {
             size="lg"
             fullWidth
             disabled
-            leftIcon={<span>📧</span>}
+        
           >
             Login with Email
           </Button>
@@ -61,14 +60,14 @@ export default function AuthPage() {
           <span className={styles.dividerLine} />
         </div>
 
-        {/* Guest CTA — the active path */}
+      
         <div className={styles.guestSection}>
           <Button
             variant="primary"
             size="lg"
             fullWidth
             onClick={handleGuest}
-            leftIcon={<span>👤</span>}
+        
           >
             Continue as Guest
           </Button>

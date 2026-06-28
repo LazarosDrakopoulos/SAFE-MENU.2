@@ -1,10 +1,3 @@
-/* ─────────────────────────────────────────────
-   Allergen Definitions
-   Each allergen has a list of ingredient keywords.
-   The allergenDetector uses these to auto-tag
-   products fetched from TheMealDB.
-───────────────────────────────────────────── */
-
 import type { Allergen } from '../types/allergen'
 
 export const ALLERGENS: Allergen[] = [
@@ -12,7 +5,7 @@ export const ALLERGENS: Allergen[] = [
     id: 'gluten',
     label: 'Gluten',
     description: 'Found in wheat, barley, rye and products made from them.',
-    emoji: '🌾',
+    emoji: '',
     keywords: [
       'flour', 'wheat', 'bread', 'breadcrumbs', 'pasta', 'noodles',
       'spaghetti', 'penne', 'linguine', 'fettuccine', 'lasagne', 'lasagna',
@@ -27,7 +20,7 @@ export const ALLERGENS: Allergen[] = [
     id: 'milk',
     label: 'Milk',
     description: 'All dairy products including cheese, butter and cream.',
-    emoji: '🥛',
+    emoji: '',
     keywords: [
       'milk', 'whole milk', 'skimmed milk', 'semi-skimmed milk',
       'butter', 'cream', 'double cream', 'single cream', 'soured cream',
@@ -44,7 +37,7 @@ export const ALLERGENS: Allergen[] = [
     id: 'eggs',
     label: 'Eggs',
     description: 'Eggs and egg-based products.',
-    emoji: '🥚',
+    emoji: '',
     keywords: [
       'egg', 'eggs', 'egg yolk', 'egg white', 'egg yolks', 'egg whites',
       'whole egg', 'free-range egg', 'free range egg',
@@ -56,7 +49,7 @@ export const ALLERGENS: Allergen[] = [
     id: 'soy',
     label: 'Soy',
     description: 'Soybeans and soy-derived products.',
-    emoji: '🫘',
+    emoji: '',
     keywords: [
       'soy', 'soya', 'soybean', 'soybeans', 'soya bean', 'soya beans',
       'soy sauce', 'soya sauce', 'tamari', 'miso', 'tofu',
@@ -68,7 +61,7 @@ export const ALLERGENS: Allergen[] = [
     id: 'nuts',
     label: 'Tree Nuts',
     description: 'All tree nuts including almonds, cashews, walnuts and more.',
-    emoji: '🥜',
+    emoji: '',
     keywords: [
       'almond', 'almonds', 'walnut', 'walnuts', 'cashew', 'cashews',
       'pistachio', 'pistachios', 'pecan', 'pecans', 'hazelnut', 'hazelnuts',
@@ -82,7 +75,7 @@ export const ALLERGENS: Allergen[] = [
     id: 'sesame',
     label: 'Sesame',
     description: 'Sesame seeds and sesame oil.',
-    emoji: '🌱',
+    emoji: '',
     keywords: [
       'sesame', 'sesame seeds', 'sesame oil', 'sesame seed',
       'tahini', 'hummus', 'halva',
@@ -92,7 +85,7 @@ export const ALLERGENS: Allergen[] = [
     id: 'fish',
     label: 'Fish',
     description: 'All fish species and fish-derived products.',
-    emoji: '🐟',
+    emoji: '',
     keywords: [
       'fish', 'salmon', 'tuna', 'cod', 'haddock', 'sea bass', 'seabass',
       'sea bream', 'trout', 'mackerel', 'sardine', 'sardines', 'anchovies',
@@ -104,7 +97,7 @@ export const ALLERGENS: Allergen[] = [
     id: 'shellfish',
     label: 'Shellfish',
     description: 'Crustaceans and molluscs including shrimp, crab and mussels.',
-    emoji: '🦐',
+    emoji: '',
     keywords: [
       'shrimp', 'prawns', 'prawn', 'crab', 'lobster', 'crayfish',
       'mussel', 'mussels', 'clam', 'clams', 'oyster', 'oysters',

@@ -57,7 +57,7 @@ export default function AllergiesPage() {
 
         {selected.length === 0 && (
           <p className={styles.noneNote}>
-            ✅ No allergies selected — all dishes will be shown.
+             No allergies selected — all dishes will be shown.
           </p>
         )}
 
@@ -66,7 +66,7 @@ export default function AllergiesPage() {
           size="lg"
           fullWidth
           onClick={handleSave}
-          leftIcon={<span>{saved ? '✓' : '💾'}</span>}
+          leftIcon={<span>{saved ? '✓' : ''}</span>}
         >
           {saved ? 'Saved! Going to menu...' : 'Save & Go to Menu'}
         </Button>

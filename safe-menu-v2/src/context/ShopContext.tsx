@@ -1,10 +1,3 @@
-/* ─────────────────────────────────────────────
-   ShopContext
-   Tracks the currently selected shop.
-   Persists selection to localStorage so the
-   user doesn't re-select on every visit.
-───────────────────────────────────────────── */
-
 import {
   createContext,
   useContext,

@@ -93,7 +93,7 @@ export default function OnboardingPage() {
         <p>This information helps us show you only the food that's safe for you.</p>
       </div>
 
-      {/* Step indicators */}
+    
       <div className={styles.steps}>
         <div className={`${styles.step} ${step >= 1 ? styles.stepActive : ''}`}>
           <span className={styles.stepDot}>1</span>
@@ -108,7 +108,7 @@ export default function OnboardingPage() {
 
       <form className={styles.form} onSubmit={handleSubmit} noValidate>
 
-        {/* ── Step 1: Personal Info ── */}
+        
         {step === 1 && (
           <div className={styles.stepContent}>
             <div className={styles.row}>
@@ -195,20 +195,20 @@ export default function OnboardingPage() {
               onClick={handleNext}
               rightIcon={<span>→</span>}
             >
-              Next — Select Allergies
+              Next
             </Button>
           </div>
         )}
 
-        {/* ── Step 2: Allergies ── */}
+       
         {step === 2 && (
           <div className={styles.stepContent}>
             <div className={styles.allergyInfo}>
-              <span className={styles.allergyInfoIcon}>ℹ️</span>
+              <span className={styles.allergyInfoIcon}></span>
               <p>Select everything you're allergic or intolerant to. We'll hide all unsafe dishes from your menu.</p>
             </div>
 
-            {/* Dropdown */}
+           
             <div className={styles.field}>
               <label className={styles.label}>
                 Your Allergies <span className={styles.required}>*</span>
@@ -250,7 +250,7 @@ export default function OnboardingPage() {
                       )
                     })}
 
-                    {/* No allergies option */}
+                  
                     <button
                       type="button"
                       className={`${styles.dropdownItem} ${styles.noAllergyItem} ${selectedAllergens.length === 0 ? styles.dropdownItemSelected : ''}`}
@@ -259,7 +259,7 @@ export default function OnboardingPage() {
                         setDropdownOpen(false)
                       }}
                     >
-                      <span className={styles.allergenEmoji}>✅</span>
+                      <span className={styles.allergenEmoji}></span>
                       <span className={styles.allergenInfo}>
                         <span className={styles.allergenLabel}>No known allergies</span>
                         <span className={styles.allergenDesc}>Show me everything on the menu</span>
@@ -277,7 +277,7 @@ export default function OnboardingPage() {
               )}
             </div>
 
-            {/* Selected allergen chips preview */}
+         
             {selectedAllergens.length > 0 && (
               <div className={styles.chips}>
                 {selectedAllergens.map(id => {
@@ -313,7 +313,7 @@ export default function OnboardingPage() {
                 size="lg"
                 rightIcon={<span>→</span>}
               >
-                Find Safe Food
+                Find
               </Button>
             </div>
           </div>

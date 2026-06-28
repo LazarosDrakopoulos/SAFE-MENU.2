@@ -2,13 +2,13 @@ import TopBar from '../../components/layout/TopBar/TopBar'
 import styles from './FirstAidPage.module.css'
 
 const STEPS = [
-  { icon: '😌', text: 'Stay calm and assess the severity of the reaction.' },
-  { icon: '💊', text: 'For mild symptoms (rash, itching): monitor closely and give antihistamines if prescribed.' },
-  { icon: '🚨', text: 'For severe reactions (difficulty breathing, swelling, dizziness): call emergency services immediately.' },
-  { icon: '💉', text: 'Use an epinephrine auto-injector (EpiPen) if available and prescribed.' },
-  { icon: '🛏️', text: 'Keep the person lying down with legs elevated if possible.' },
-  { icon: '🚫', text: 'Do NOT give food or drink if the person has difficulty swallowing.' },
-  { icon: '👁️', text: 'Stay with them and monitor until help arrives.' },
+  { icon: '', text: 'Stay calm and assess the severity of the reaction.' },
+  { icon: '', text: 'For mild symptoms (rash, itching): monitor closely and give antihistamines if prescribed.' },
+  { icon: '', text: 'For severe reactions (difficulty breathing, swelling, dizziness): call emergency services immediately.' },
+  { icon: '', text: 'Use an epinephrine auto-injector (EpiPen) if available and prescribed.' },
+  { icon: '', text: 'Keep the person lying down with legs elevated if possible.' },
+  { icon: '', text: 'Do NOT give food or drink if the person has difficulty swallowing.' },
+  { icon: '', text: 'Stay with them and monitor until help arrives.' },
 ]
 
 export default function FirstAidPage() {
@@ -18,7 +18,7 @@ export default function FirstAidPage() {
 
       <div className={styles.content}>
         <div className={styles.hero}>
-          <span className={styles.heroIcon}>🛡️</span>
+          <span className={styles.heroIcon}></span>
           <h2>Food Allergy Emergency</h2>
           <p>Follow these steps if someone is having an allergic reaction.</p>
         </div>
@@ -41,7 +41,7 @@ export default function FirstAidPage() {
           rel="noopener noreferrer"
           className={styles.hospitalBtn}
         >
-          <span>🏥</span>
+          <span></span>
           Find Nearest Hospital
         </a>
 

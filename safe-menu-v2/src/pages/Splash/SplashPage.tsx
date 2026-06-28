@@ -9,7 +9,7 @@ export default function SplashPage() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      // If already authenticated, skip auth screen
+      
       navigate(mode ? '/onboarding' : '/auth', { replace: true })
     }, 2200)
 
@@ -27,7 +27,7 @@ export default function SplashPage() {
           draggable={false}
         />
       </div>
-      <p className={styles.tagline}>Eat safely. Every meal.</p>
+      <p className={styles.tagline}>Eat safely</p>
     </div>
   )
 }

@@ -22,6 +22,6 @@ export interface Allergen {
   label: string
   description: string
   emoji: string
-  /** Ingredient keywords that map to this allergen (lowercase) */
+
   keywords: string[]
 }

@@ -1,10 +1,3 @@
-/* ─────────────────────────────────────────────
-   GuestContext
-   Manages the guest profile: name, emergency
-   contact, and selected allergens.
-   Persists everything to localStorage.
-───────────────────────────────────────────── */
-
 import {
   createContext,
   useContext,
@@ -17,20 +10,17 @@ import type { AllergenId } from '../types/allergen'
 
 const STORAGE_KEY = 'sm_guest_profile'
 
-/* ── State ── */
 interface GuestState {
   profile: GuestProfile | null
   isProfileComplete: boolean
 }
 
-/* ── Actions ── */
 type GuestAction =
   | { type: 'SET_PROFILE'; payload: GuestProfile }
   | { type: 'UPDATE_ALLERGENS'; payload: AllergenId[] }
   | { type: 'TOGGLE_ALLERGEN'; payload: AllergenId }
   | { type: 'CLEAR_PROFILE' }
 
-/* ── Reducer ── */
 function guestReducer(state: GuestState, action: GuestAction): GuestState {
   switch (action.type) {
     case 'SET_PROFILE':
@@ -62,7 +52,6 @@ function guestReducer(state: GuestState, action: GuestAction): GuestState {
   }
 }
 
-/* ── Initial state from localStorage ── */
 function getInitialState(): GuestState {
   try {
     const stored = localStorage.getItem(STORAGE_KEY)
@@ -71,12 +60,10 @@ function getInitialState(): GuestState {
       return { profile, isProfileComplete: true }
     }
   } catch {
-    // Ignore parse errors
   }
   return { profile: null, isProfileComplete: false }
 }
 
-/* ── Context ── */
 interface GuestContextValue {
   state: GuestState
   setProfile: (profile: GuestProfile) => void
@@ -87,11 +74,9 @@ interface GuestContextValue {
 
 const GuestContext = createContext<GuestContextValue | null>(null)
 
-/* ── Provider ── */
 export function GuestProvider({ children }: { children: ReactNode }) {
   const [state, dispatch] = useReducer(guestReducer, undefined, getInitialState)
 
-  // Sync to localStorage whenever profile changes
   useEffect(() => {
     if (state.profile) {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state.profile))
@@ -120,7 +105,6 @@ export function GuestProvider({ children }: { children: ReactNode }) {
   )
 }
 
-/* ── Hook ── */
 export function useGuest(): GuestContextValue {
   const ctx = useContext(GuestContext)
   if (!ctx) throw new Error('useGuest must be used inside <GuestProvider>')

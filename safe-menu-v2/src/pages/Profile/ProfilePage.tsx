@@ -30,13 +30,13 @@ export default function ProfilePage() {
       <TopBar title="My Profile" />
 
       <div className={styles.content}>
-        {/* Avatar */}
+       
         <div className={styles.avatarSection}>
           <div className={styles.avatar}>
             {profile.firstName[0]}{profile.lastName[0]}
           </div>
           <h2 className={styles.name}>{profile.firstName} {profile.lastName}</h2>
-          <span className={styles.guestBadge}>👤 Guest</span>
+          <span className={styles.guestBadge}> Guest</span>
         </div>
 
         {/* Info card */}
@@ -65,7 +65,7 @@ export default function ProfilePage() {
           )}
         </div>
 
-        {/* Allergies */}
+       
         <div className={styles.card}>
           <div className={styles.cardHeader}>
             <h3 className={styles.cardTitle}>My Allergies</h3>
@@ -74,7 +74,7 @@ export default function ProfilePage() {
             </button>
           </div>
           {profile.allergens.length === 0 ? (
-            <p className={styles.noAllergies}>✅ No known allergies</p>
+            <p className={styles.noAllergies}> No known allergies</p>
           ) : (
             <div className={styles.allergenList}>
               {profile.allergens.map(id => (
@@ -87,14 +87,14 @@ export default function ProfilePage() {
           )}
         </div>
 
-        {/* Actions */}
+        
         <div className={styles.actions}>
           <Button
             variant="secondary"
             size="md"
             fullWidth
             onClick={() => navigate('/shops')}
-            leftIcon={<span>🏪</span>}
+            leftIcon={<span></span>}
           >
             Change Venue
           </Button>
@@ -104,13 +104,13 @@ export default function ProfilePage() {
             size="md"
             fullWidth
             onClick={() => setShowConfirm(true)}
-            leftIcon={<span>🚪</span>}
+            leftIcon={<span></span>}
           >
             Start Over
           </Button>
         </div>
 
-        {/* Confirm modal */}
+        
         {showConfirm && (
           <div className={styles.modalOverlay} onClick={() => setShowConfirm(false)}>
             <div className={styles.modal} onClick={e => e.stopPropagation()}>

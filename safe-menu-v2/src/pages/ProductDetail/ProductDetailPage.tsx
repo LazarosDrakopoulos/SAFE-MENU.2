@@ -42,7 +42,7 @@ export default function ProductDetailPage() {
 
   return (
     <div className={styles.page}>
-      {/* Hero image */}
+    
       <div className={styles.imageWrap}>
         <img src={product.imageUrl} alt={product.name} className={styles.image} />
         <button className={styles.backBtn} onClick={() => navigate(-1)} aria-label="Go back">
@@ -61,13 +61,13 @@ export default function ProductDetailPage() {
       </div>
 
       <div className={styles.body}>
-        {/* Title + category */}
+       
         <div className={styles.titleRow}>
           <h1 className={styles.title}>{product.name}</h1>
           <Badge variant="info">{product.category}</Badge>
         </div>
 
-        {/* Safety alert */}
+        
         {dangerAllergens.length > 0 && (
           <div className={styles.dangerAlert}>
             <span className={styles.dangerIcon}>🚫</span>
@@ -78,13 +78,13 @@ export default function ProductDetailPage() {
           </div>
         )}
 
-        {/* Description */}
+       
         <div className={styles.section}>
           <h2 className={styles.sectionTitle}>About this dish</h2>
           <p className={styles.description}>{product.description}</p>
         </div>
 
-        {/* Ingredients */}
+       
         <div className={styles.section}>
           <h2 className={styles.sectionTitle}>Ingredients</h2>
           <div className={styles.ingredientList}>
@@ -105,11 +105,11 @@ export default function ProductDetailPage() {
           </div>
         </div>
 
-        {/* Allergens in this dish */}
+        
         <div className={styles.section}>
           <h2 className={styles.sectionTitle}>Allergens in this dish</h2>
           {product.allergens.length === 0 ? (
-            <p className={styles.noAllergens}>✅ No known allergens detected</p>
+            <p className={styles.noAllergens}> No known allergens detected</p>
           ) : (
             <div className={styles.allergenList}>
               {product.allergens.map(id => (

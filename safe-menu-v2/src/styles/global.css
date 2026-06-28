@@ -1,7 +1,4 @@
-/* ─────────────────────────────────────────────
-   SAFE MENU V2 — Global Styles
-   App shell, body base, typography defaults.
-───────────────────────────────────────────── */
+
 
 body {
   font-family: var(--font-sans);
@@ -14,8 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ── App Shell ── */
-/* Mobile-first: content is centered, max 480px, like a real app */
+
 #root {
   display: flex;
   flex-direction: column;
@@ -27,7 +23,7 @@ body {
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.08);
 }
 
-/* ── Page Wrapper ── */
+
 .page {
   flex: 1;
   display: flex;
@@ -38,7 +34,7 @@ body {
   overflow-y: auto;
 }
 
-/* ── Typography Defaults ── */
+
 h1 {
   font-size: var(--text-2xl);
   font-weight: var(--weight-bold);
@@ -64,26 +60,26 @@ p {
   color: var(--color-text-secondary);
 }
 
-/* ── Scrollbar ── */
+
 ::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 
-/* ── Focus visible (accessibility) ── */
+
 :focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
   border-radius: var(--radius-sm);
 }
 
-/* ── Selection ── */
+
 ::selection {
   background-color: var(--color-primary-faint);
   color: var(--color-primary-dark);
 }
 
-/* ── Reduced motion ── */
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;

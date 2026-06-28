@@ -74,10 +74,9 @@ export default function MenuPage() {
       />
 
       <div className={styles.content}>
-        {/* Safe summary banner */}
         {!loading && userAllergens.length > 0 && (
           <div className={styles.safetyBanner}>
-            <span className={styles.safetyIcon}>🛡️</span>
+            <span className={styles.safetyIcon}></span>
             <div className={styles.safetyText}>
               <strong>{safeCount} safe dishes</strong> found for your profile
               <span className={styles.allergenPills}>
@@ -91,7 +90,6 @@ export default function MenuPage() {
           </div>
         )}
 
-        {/* Category tabs */}
         {!loading && categories.length > 1 && (
           <div className={styles.categoryRow}>
             {categories.map(cat => (
@@ -106,7 +104,7 @@ export default function MenuPage() {
           </div>
         )}
 
-        {/* Show unsafe toggle */}
+      
         {!loading && userAllergens.length > 0 && (
           <div className={styles.toggleRow}>
             <span className={styles.toggleLabel}>Show unsafe dishes</span>
@@ -122,19 +120,19 @@ export default function MenuPage() {
           </div>
         )}
 
-        {/* States */}
+       
         {loading && <Spinner label="Loading menu..." />}
 
         {error && (
           <div className={styles.errorState}>
-            <span>⚠️</span>
+            <span></span>
             <p>{error}</p>
           </div>
         )}
 
         {!loading && !error && filtered.length === 0 && (
           <div className={styles.emptyState}>
-            <span className={styles.emptyEmoji}>🥺</span>
+            <span className={styles.emptyEmoji}></span>
             <h3>No safe dishes here</h3>
             <p>
               {showUnsafe
@@ -144,7 +142,7 @@ export default function MenuPage() {
           </div>
         )}
 
-        {/* Product grid */}
+        
         {!loading && !error && filtered.length > 0 && (
           <div className={styles.grid}>
             {filtered.map((product, i) => {
@@ -165,7 +163,7 @@ export default function MenuPage() {
                     />
                     {!safe && (
                       <div className={styles.unsafeOverlay}>
-                        <span>⚠️ Contains allergens</span>
+                        <span> Contains allergens</span>
                       </div>
                     )}
                     {safe && userAllergens.length > 0 && (

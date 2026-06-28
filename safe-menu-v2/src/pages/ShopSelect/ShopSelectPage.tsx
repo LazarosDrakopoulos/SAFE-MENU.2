@@ -32,17 +32,17 @@ export default function ShopSelectPage() {
     <div className={styles.page}>
       <div className={styles.header}>
         <img src="/smlogo.png" alt="Safe Menu" className={styles.logo} />
-        <h1>Hi, {firstName}! 👋</h1>
+        <h1>Hi, {firstName}!</h1>
         <p>Where are you eating today? Choose a venue to see your safe menu.</p>
       </div>
 
-      {/* Tabs */}
+      
       <div className={styles.tabs}>
         <button
           className={`${styles.tab} ${activeTab === 'select' ? styles.tabActive : ''}`}
           onClick={() => setActiveTab('select')}
         >
-          🏪 Select Venue
+           Select Venue
         </button>
         <button
           className={`${styles.tab} ${styles.tabDisabled}`}
@@ -54,7 +54,7 @@ export default function ShopSelectPage() {
         </button>
       </div>
 
-      {/* Shop list */}
+      
       {loading ? (
         <Spinner label="Loading venues..." />
       ) : (

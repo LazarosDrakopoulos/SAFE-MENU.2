@@ -1,9 +1,3 @@
-/* ─────────────────────────────────────────────
-   AuthContext
-   Phase 1: tracks guest vs auth mode.
-   Phase 2: real JWT/session logic goes here.
-───────────────────────────────────────────── */
-
 import {
   createContext,
   useContext,
