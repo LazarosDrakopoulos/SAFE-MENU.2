@@ -88,7 +88,7 @@ export default function OnboardingPage() {
   return (
     <div className={styles.page}>
       <div className={styles.header}>
-        <img src="${import.meta.env.BASE_URL}smlogo.png" alt="Safe Menu" className={styles.logo} />
+        <img src={`${import.meta.env.BASE_URL}smlogo.png`}alt="Safe Menu" className={styles.logo} />
         <h1>Your Safety Profile</h1>
         <p>This information helps us show you only the food that's safe for you.</p>
       </div>

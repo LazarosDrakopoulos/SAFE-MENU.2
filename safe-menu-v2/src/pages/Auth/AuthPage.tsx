@@ -20,7 +20,7 @@ export default function AuthPage() {
 
      
       <div className={styles.logoSection}>
-        <img src="${import.meta.env.BASE_URL}smlogo.png" alt="Safe Menu" className={styles.logo} />
+        <img src={`${import.meta.env.BASE_URL}smlogo.png`} alt="Safe Menu" className={styles.logo} />
         <h1 className={styles.appName}>Safe Menu</h1>
         <p className={styles.tagline}>Discover food that's safe for you</p>
       </div>

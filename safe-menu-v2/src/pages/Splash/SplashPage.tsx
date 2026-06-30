@@ -21,7 +21,7 @@ export default function SplashPage() {
       <div className={styles.logoWrap}>
         <div className={styles.logoRing} />
         <img
-          src="${import.meta.env.BASE_URL}smlogo.png"
+          src={`${import.meta.env.BASE_URL}smlogo.png`}
           alt="Safe Menu"
           className={styles.logo}
           draggable={false}

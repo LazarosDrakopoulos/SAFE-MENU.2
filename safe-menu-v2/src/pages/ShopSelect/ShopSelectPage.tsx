@@ -31,7 +31,7 @@ export default function ShopSelectPage() {
   return (
     <div className={styles.page}>
       <div className={styles.header}>
-        <img src="${import.meta.env.BASE_URL}smlogo.png" alt="Safe Menu" className={styles.logo} />
+        <img src={`${import.meta.env.BASE_URL}smlogo.png`} alt="Safe Menu" className={styles.logo} />
         <h1>Hi, {firstName}!</h1>
         <p>Where are you eating today? Choose a venue to see your safe menu.</p>
       </div>
