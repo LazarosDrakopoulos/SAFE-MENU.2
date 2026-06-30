@@ -1,0 +1,161 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  padding-top: var(--top-bar-height);
+  padding-bottom: calc(var(--bottom-nav-height) + var(--safe-area-bottom) + var(--space-4));
+  background: var(--color-bg);
+}
+
+.content {
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  animation: fadeIn 300ms ease;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  background: var(--color-danger-light);
+  border-radius: var(--radius-xl);
+  border: 1.5px solid var(--color-danger);
+}
+
+.heroIcon { font-size: 2.5rem; }
+
+.hero h2 {
+  font-size: var(--text-xl);
+  font-weight: var(--weight-bold);
+  color: var(--color-danger);
+}
+
+.hero p {
+  font-size: var(--text-sm);
+  color: var(--color-danger);
+  margin: 0;
+}
+
+.stepList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  animation: slideUp 300ms ease both;
+}
+
+.stepNumber {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+  color: white;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-bold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.stepBody {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border);
+}
+
+.stepIcon { font-size: 1.2rem; flex-shrink: 0; }
+
+.stepText {
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  line-height: var(--leading-relaxed);
+  margin: 0;
+}
+
+.hospitalBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  background: var(--color-success);
+  color: white;
+  border-radius: var(--radius-xl);
+  padding: var(--space-4);
+  font-size: var(--text-base);
+  font-weight: var(--weight-bold);
+  text-decoration: none;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+  box-shadow: 0 4px 16px rgba(39, 174, 96, 0.35);
+}
+
+.hospitalBtn:hover {
+  background: #229954;
+  transform: translateY(-2px);
+}
+
+.emergencyCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-5);
+  background: var(--color-danger);
+  border-radius: var(--radius-xl);
+  text-align: center;
+}
+
+.emergencyNum {
+  font-size: 3rem;
+  font-weight: var(--weight-black);
+  color: white;
+  line-height: 1;
+}
+
+.emergencyCard p {
+  font-size: var(--text-sm);
+  color: rgba(255,255,255,0.8);
+  margin: 0;
+}
+
+.callBtn {
+  margin-top: var(--space-2);
+  background: white;
+  color: var(--color-danger);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-base);
+  padding: var(--space-3) var(--space-8);
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  transition: transform var(--transition-fast);
+}
+
+.callBtn:hover {
+  transform: scale(1.04);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
