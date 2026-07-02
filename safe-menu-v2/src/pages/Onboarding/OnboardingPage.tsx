@@ -193,7 +193,7 @@ export default function OnboardingPage() {
               size="lg"
               fullWidth
               onClick={handleNext}
-              rightIcon={<span>→</span>}
+              rightIcon={<span></span>}
             >
               Next
             </Button>
@@ -303,7 +303,7 @@ export default function OnboardingPage() {
                 variant="ghost"
                 size="md"
                 onClick={() => setStep(1)}
-                leftIcon={<span>←</span>}
+                leftIcon={<span></span>}
               >
                 Back
               </Button>
@@ -311,7 +311,7 @@ export default function OnboardingPage() {
                 type="submit"
                 variant="primary"
                 size="lg"
-                rightIcon={<span>→</span>}
+                rightIcon={<span></span>}
               >
                 Find
               </Button>
