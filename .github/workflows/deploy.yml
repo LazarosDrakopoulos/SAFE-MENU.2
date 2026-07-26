@@ -2,7 +2,9 @@ name: Deploy Safe Menu V2
 
 on:
   push:
-    branches: [main]
+    branches: [react-v2git add .github/workflows/deploy.yml
+git commit -m "fix: trigger deploy on react-v2"
+git push origin react-v2]
 
 permissions:
   contents: read
