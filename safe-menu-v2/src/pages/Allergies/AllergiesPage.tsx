@@ -57,7 +57,7 @@ export default function AllergiesPage() {
 
         {selected.length === 0 && (
           <p className={styles.noneNote}>
-             No allergies selected — all dishes will be shown.
+             No allergies selected , all dishes will be shown.
           </p>
         )}
 

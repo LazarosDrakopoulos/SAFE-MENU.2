@@ -1,7 +1,10 @@
 # SAFE-MENU.2
 
-## Live demo
-https://lazarosdrakopoulos.github.io/SAFE-MENU.2/
+<img width="878" height="577" alt="image" src="https://github.com/user-attachments/assets/f11557fa-5f1e-49f4-81e7-fcd5b5aa79b0" />
+
+
+## [Live demo](https://lazarosdrakopoulos.github.io/SAFE-MENU.2/)
+
 
 "Safe Menu" is a web application designed to help users make safer food choices based on their allergies.
 This project was created as part of my journey into programming, inspired by my real-world experience as a pastry chef.

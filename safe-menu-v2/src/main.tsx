@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { AuthProvider } from './context/AuthContext'
 import { GuestProvider } from './context/GuestContext'
 import { ShopProvider } from './context/ShopContext'
+import { FavoritesProvider } from './context/FavoritesContext'
 import App from './App'
 
 import './styles/tokens.css'
@@ -20,7 +21,9 @@ createRoot(root).render(
       <AuthProvider>
         <GuestProvider>
           <ShopProvider>
-            <App />
+            <FavoritesProvider>
+              <App />
+            </FavoritesProvider>
           </ShopProvider>
         </GuestProvider>
       </AuthProvider>
