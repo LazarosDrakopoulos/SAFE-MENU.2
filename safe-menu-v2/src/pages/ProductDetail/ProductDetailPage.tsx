@@ -9,6 +9,7 @@ import type { Product } from '../../types/product'
 import Badge from '../../components/ui/Badge/Badge'
 import Spinner from '../../components/ui/Spinner/Spinner'
 import styles from './ProductDetailPage.module.css'
+import FavoriteButton from '../../components/features/FavoriteButton/FavoriteButton'
 
 export default function ProductDetailPage() {
   const { externalId } = useParams<{ externalId: string }>()
@@ -62,10 +63,13 @@ export default function ProductDetailPage() {
 
       <div className={styles.body}>
        
-        <div className={styles.titleRow}>
-          <h1 className={styles.title}>{product.name}</h1>
-          <Badge variant="info">{product.category}</Badge>
-        </div>
+       <div className={styles.titleRow}>
+  <h1 className={styles.title}>{product.name}</h1>
+  <div className={styles.titleActions}>
+    <FavoriteButton externalId={product.externalId} size="md" />
+    <Badge variant="info">{product.category}</Badge>
+  </div>
+</div>
 
         
         {dangerAllergens.length > 0 && (

@@ -9,6 +9,7 @@ import type { Product } from '../../types/product'
 import TopBar from '../../components/layout/TopBar/TopBar'
 import Spinner from '../../components/ui/Spinner/Spinner'
 import styles from './MenuPage.module.css'
+import FavoriteButton from '../../components/features/FavoriteButton/FavoriteButton'
 
 export default function MenuPage() {
   const navigate = useNavigate()
@@ -65,7 +66,7 @@ export default function MenuPage() {
   return (
     <div className={styles.page}>
       <TopBar
-        title={selectedShop.name}
+        title={selectedShop.name} showProfile
         rightSlot={
           <button className={styles.changeBtn} onClick={clearShop}>
             Change
@@ -169,10 +170,14 @@ export default function MenuPage() {
                     {safe && userAllergens.length > 0 && (
                       <div className={styles.safeTag}>✓ Safe</div>
                     )}
+                    
                   </div>
 
                   <div className={styles.cardBody}>
                     <h3 className={styles.cardTitle}>{product.name}</h3>
+                    <div className={styles.favBtn}>
+                       <FavoriteButton externalId={product.externalId} size="sm" />
+                     </div>
                     <span className={styles.cardCategory}>{product.category}</span>
 
                     {product.allergens.length > 0 && (

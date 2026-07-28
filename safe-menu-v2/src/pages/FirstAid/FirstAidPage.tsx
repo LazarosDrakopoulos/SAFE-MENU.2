@@ -14,7 +14,7 @@ const STEPS = [
 export default function FirstAidPage() {
   return (
     <div className={styles.page}>
-      <TopBar title="First Aid" />
+      <TopBar title="First Aid" showProfile />
 
       <div className={styles.content}>
         <div className={styles.hero}>

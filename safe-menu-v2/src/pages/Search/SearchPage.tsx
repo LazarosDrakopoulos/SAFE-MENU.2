@@ -80,7 +80,7 @@ export default function SearchPage() {
 
   return (
     <div className={styles.page}>
-      <TopBar title="Search" />
+      <TopBar title="Search" showProfile />
 
       <div className={styles.content}>
         {/* Search bar */}
