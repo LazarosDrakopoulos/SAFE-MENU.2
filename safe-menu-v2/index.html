@@ -10,6 +10,15 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+  (function() {
+    var redirect = sessionStorage.getItem('sm_redirect');
+    if (redirect) {
+      sessionStorage.removeItem('sm_redirect');
+      window.history.replaceState(null, '', '/SAFE-MENU.2' + redirect);
+    }
+  })();
+</script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

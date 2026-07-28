@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Safe Menu</title>
+    <script>
+      var path = window.location.pathname;
+      var base = '/SAFE-MENU.2';
+      var route = path.replace(base, '') || '/';
+      sessionStorage.setItem('sm_redirect', route + window.location.search);
+      window.location.replace(base + '/');
+    </script>
+  </head>
+  <body></body>
+</html>
